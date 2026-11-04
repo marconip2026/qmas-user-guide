@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create a Supplier</title>
+<style>
+  :root { --bg:#F7FAFF; --card:#fff; --text:#1F2937; --muted:#6B7280; --primary:#005EFF; --line:#E5E7EB; --tip:#EEF4FF; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:15px/1.6 Roboto, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:40px 0 12px; padding-top:16px; border-top:1px solid var(--line); }
+  h3 { font-size:16px; margin:24px 0 8px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .meta { display:grid; grid-template-columns:max-content 1fr; gap:4px 16px; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; }
+  .meta b { color:var(--muted); font-weight:500; }
+  a { color:var(--primary); }
+  ol.overview { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 16px 16px 36px; }
+  figure { margin:12px 0 20px; }
+  figure img { width:100%; border:1px solid var(--line); border-radius:8px; display:block; }
+  figcaption { color:var(--muted); font-size:13px; margin-top:6px; }
+  .tip { background:var(--tip); border-left:3px solid var(--primary); border-radius:4px; padding:12px 16px; margin:12px 0; }
+  table { border-collapse:collapse; width:100%; background:var(--card); font-size:14px; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#F3F4F6; }
+  dl.faq dt { font-weight:600; margin-top:12px; }
+  dl.faq dd { margin:4px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="../">← All guides</a></p>
+  <h1>Supplier Management — Create a Supplier</h1>
+  <p class="sub">Add a supplier profile so you can link it to products, factories, documents and service jobs.</p>
+  <div class="meta">
+    <b>Module</b><span>Supplier / Factory Management</span>
+    <b>Start here</b><span><a href="https://qmas.icw.io/supplier-manager/suppliers">https://qmas.icw.io/supplier-manager/suppliers</a> → <b>Create Supplier</b></span>
+    <b>Direct link</b><span><a href="https://qmas.icw.io/supplier-manager/create">https://qmas.icw.io/supplier-manager/create</a></span>
+    <b>Steps</b><span>1 Supplier Profile → 2 Classification → 3 Certification → Done</span>
+    <b>Checked against</b><span>QMAS dev, 4 Nov 2026</span>
+  </div>
+
+  <h2>Overview</h2>
+  <ol class="overview">
+    <li>Open <b>Supplier / Factory Management</b>, stay on the <b>Supplier</b> tab and click <b>Create Supplier</b>.</li>
+    <li><b>Supplier Profile</b>: company overview and contact.</li>
+    <li><b>Classification</b> (optional): product category and tags.</li>
+    <li><b>Certification</b> (optional): add certificates, then click <b>Done</b>.</li>
+    <li>The supplier profile opens.</li>
+  </ol>
+
+  <h2>Step-by-step</h2>
+
+  <h3>1. Open Supplier / Factory Management</h3>
+  <p>In the left menu, open <b>Supplier / Factory Management</b>. The <b>Supplier</b> tab lists your suppliers with their location, category, status, connect status and rating.</p>
+  <p>Click <b>Create Supplier</b>. You can also use <b>Import Supplier</b> to add many suppliers from a file, or <b>Invite Supplier</b> to invite a supplier to connect with you on QMAS.</p>
+  <figure><img src="img/01-list.jpg" alt="Supplier tab with Import Supplier, Create Supplier and Invite Supplier."><figcaption>Supplier tab with Import Supplier, Create Supplier and Invite Supplier.</figcaption></figure>
+
+  <h3>2. Supplier Profile — company overview</h3>
+  <ul>
+    <li><b>Upload Logo</b> (optional).</li>
+    <li><b>Supplier ID</b> (optional): your own reference number.</li>
+    <li><b>Supplier Name</b>: English name (required) and local-language name (optional).</li>
+    <li><b>Location</b>: country or region, then province and city.</li>
+    <li><b>Address</b> and <b>Website</b> (optional).</li>
+  </ul>
+  <figure><img src="img/02-step1-overview.jpg" alt="Create supplier profile — step 1, Company overview."><figcaption>Create supplier profile — step 1, Company overview.</figcaption></figure>
+
+  <h3>3. Supplier Profile — contact</h3>
+  <p>Under <b>2. Contact</b>, fill in the <b>Contact person</b>, <b>Contact Email</b> and at least one <b>Email address</b>. For each email address, choose a type: Company, QA, Sales or Other. Click <b>Add email</b> for more. <b>Contact no.</b> is optional.</p>
+  <figure><img src="img/03-step1-contact.jpg" alt="Contact section."><figcaption>Contact section.</figcaption></figure>
+  <p>If a required field is empty when you click <b>Next</b>, it turns red, for example “Type is required” or “Email is required”.</p>
+  <figure><img src="img/04-email-required.jpg" alt="The email type and email address are required."><figcaption>The email type and email address are required.</figcaption></figure>
+
+  <h3>4. Classification (optional)</h3>
+  <p>Click <b>Select category</b> to choose the product categories this supplier offers. Click <b>Select tag</b> to add your own tags. Click <b>Next</b>.</p>
+  <figure><img src="img/05-step2-classification.jpg" alt="Step 2 Classification."><figcaption>Step 2 Classification.</figcaption></figure>
+
+  <h3>5. Certification (optional)</h3>
+  <p>Click <b>Add</b> to upload a certificate. Choose the certification type, upload the file, and fill in the rating, issue party and dates. Click <b>Done</b> to create the supplier.</p>
+  <figure><img src="img/06-step3-certification.jpg" alt="Step 3 Certification."><figcaption>Step 3 Certification.</figcaption></figure>
+
+  <h3>6. Done — supplier profile</h3>
+  <p>The supplier profile opens. Use the tabs <b>Overview</b>, <b>Product</b>, <b>Factory</b>, <b>Certificate</b>, <b>Document</b> and <b>Compliance Data</b> to manage everything linked to this supplier. Click the pencil icon next to the name, or next to <b>Contact</b>, to edit.</p>
+  <figure><img src="img/07-supplier-profile.jpg" alt="Supplier profile — Overview tab."><figcaption>Supplier profile — Overview tab.</figcaption></figure>
+
+  <h2>Tips</h2>
+  <div class="tip">Search the Supplier list before you create a supplier so you don’t add a duplicate.</div>
+  <div class="tip">Consistent tags make filtering the list easier later.</div>
+
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>How do I create a new supplier?</dt><dd>Go to Supplier / Factory Management (<a href="https://qmas.icw.io/supplier-manager/suppliers),">https://qmas.icw.io/supplier-manager/suppliers),</a> click Create Supplier, fill in Supplier Profile, then Next, Next and Done. Direct link: <a href="https://qmas.icw.io/supplier-manager/create">https://qmas.icw.io/supplier-manager/create</a></dd>
+    <dt>Can I add many suppliers at once?</dt><dd>Yes. Click Import Supplier on the Supplier tab.</dd>
+    <dt>How do I invite a supplier to QMAS?</dt><dd>Click Invite Supplier on the Supplier tab.</dd>
+    <dt>How do I edit a supplier?</dt><dd>Open the supplier from the list and click the pencil icon next to its name or next to Contact.</dd>
+  </dl>
+</main>
+</body>
+</html>
