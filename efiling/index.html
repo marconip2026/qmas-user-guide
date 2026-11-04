@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CPSC eFiling</title>
+<style>
+  :root { --bg:#F7FAFF; --card:#fff; --text:#1F2937; --muted:#6B7280; --primary:#005EFF; --line:#E5E7EB; --tip:#EEF4FF; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:15px/1.6 Roboto, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:40px 0 12px; padding-top:16px; border-top:1px solid var(--line); }
+  h3 { font-size:16px; margin:24px 0 8px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .meta { display:grid; grid-template-columns:max-content 1fr; gap:4px 16px; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; }
+  .meta b { color:var(--muted); font-weight:500; }
+  a { color:var(--primary); }
+  ol.overview { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 16px 16px 36px; }
+  figure { margin:12px 0 20px; }
+  figure img { width:100%; border:1px solid var(--line); border-radius:8px; display:block; }
+  figcaption { color:var(--muted); font-size:13px; margin-top:6px; }
+  .tip { background:var(--tip); border-left:3px solid var(--primary); border-radius:4px; padding:12px 16px; margin:12px 0; }
+  table { border-collapse:collapse; width:100%; background:var(--card); font-size:14px; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#F3F4F6; }
+  dl.faq dt { font-weight:600; margin-top:12px; }
+  dl.faq dd { margin:4px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="../">← All guides</a></p>
+  <h1>eFiling — Submit eFiling to CPSC</h1>
+  <p class="sub">Create and submit CPSC eFiling certificates for your products, with AI that can fill the form from your test report.</p>
+  <div class="meta">
+    <b>Module</b><span>eFiling</span>
+    <b>Start here</b><span><a href="https://qmas.icw.io/efiling">https://qmas.icw.io/efiling</a> → <b>Add eFiling</b></span>
+    <b>Before you start</b><span>Set up your CPSC Certifier ID and API keys in Company Profile → <b>CPSC eFiling - Certifier ID</b>.</span>
+    <b>Checked against</b><span>QMAS dev, 4 Nov 2026</span>
+  </div>
+
+  <h2>Overview</h2>
+  <ol class="overview">
+    <li>Make sure your CPSC Certifier ID is set up in Company Profile.</li>
+    <li>Open <b>eFiling</b> and click <b>Add eFiling</b>.</li>
+    <li>Upload a report for <b>AI Extract</b>, select a document already in QMAS, or <b>Start With Blank</b>.</li>
+    <li>In <b>Quick Select eFiling Information</b>, check the Certifier ID and products, then click <b>Next</b>.</li>
+    <li>Complete the <b>eFiling Submission</b> form, then <b>Save Draft</b> or <b>Preview to Submit</b>.</li>
+  </ol>
+
+  <h2>Step-by-step</h2>
+
+  <h3>1. Open eFiling</h3>
+  <p>In the left menu, open <b>eFiling</b>. The list shows each eFiling with its log no., product, status, certifier ID, collection ID, product ID and version ID. Use <b>View</b> to open one or <b>Duplicate</b> to start a new version from it. Click <b>Add eFiling</b>.</p>
+  <figure><img src="img/01-list.jpg" alt="eFiling list."><figcaption>eFiling list.</figcaption></figure>
+
+  <h3>2. Add documents for AI Extract</h3>
+  <ul>
+    <li><b>Upload Report &amp; Auto-fill by AI</b>: drop a PDF test report. AI extracts the data and fills the form.</li>
+    <li><b>Select Document in QMAS</b>: choose a document already in Document Management, with no re-upload.</li>
+    <li><b>Start With Blank</b>: fill the form yourself.</li>
+  </ul>
+  <figure><img src="img/02-ai-extract.jpg" alt="Add Documents for AI Extract."><figcaption>Add Documents for AI Extract.</figcaption></figure>
+
+  <h3>3. Quick Select eFiling Information</h3>
+  <p>Choose the <b>CPSC Certifier ID</b> and check the products to include. Click <b>Next</b>.</p>
+  <figure><img src="img/03-quick-select.jpg" alt="Quick Select eFiling Information."><figcaption>Quick Select eFiling Information.</figcaption></figure>
+
+  <h3>4. eFiling Submission form</h3>
+  <p>Fill in <b>eFiling Information</b> (Certifier ID, collection, point of contact) and <b>Product Detail</b>. Use <b>Link To QMAS Product</b> to connect the form to a product, or tick <b>Create As New Product</b>. Use <b>+ Add Product</b> at the top for a multi-product submission.</p>
+  <p>Then complete the remaining sections (lab, citations and exclusions). Click <b>Save Draft</b> to finish later, or <b>Preview to Submit</b> to check and send to CPSC.</p>
+  <figure><img src="img/04-submission-form.jpg" alt="eFiling Submission form."><figcaption>eFiling Submission form.</figcaption></figure>
+  <p>If you close the form without saving, QMAS asks you to confirm. Unsaved values are lost. Saved drafts stay in the eFiling list.</p>
+
+  <h2>Tips</h2>
+  <div class="tip">AI Extract works best with a clear PDF test report.</div>
+  <div class="tip">Within 48 hours you can resubmit with the same Version ID to overwrite. After that, use a new Version ID.</div>
+
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>How do I submit eFiling to CPSC?</dt><dd>Go to eFiling (<a href="https://qmas.icw.io/efiling),">https://qmas.icw.io/efiling),</a> click Add eFiling, upload a report for AI Extract or Start With Blank, check the Quick Select information, complete the eFiling Submission form, then Preview to Submit.</dd>
+    <dt>Where do I set up my CPSC API key?</dt><dd>Settings (gear icon) → Company Profile → CPSC eFiling - Certifier ID.</dd>
+    <dt>Can AI fill in the eFiling form?</dt><dd>Yes. In Add eFiling, upload a PDF report under Upload Report &amp; Auto-fill by AI.</dd>
+  </dl>
+</main>
+</body>
+</html>

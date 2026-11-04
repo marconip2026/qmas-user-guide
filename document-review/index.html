@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Document Review</title>
+<style>
+  :root { --bg:#F7FAFF; --card:#fff; --text:#1F2937; --muted:#6B7280; --primary:#005EFF; --line:#E5E7EB; --tip:#EEF4FF; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:15px/1.6 Roboto, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:40px 0 12px; padding-top:16px; border-top:1px solid var(--line); }
+  h3 { font-size:16px; margin:24px 0 8px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .meta { display:grid; grid-template-columns:max-content 1fr; gap:4px 16px; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; }
+  .meta b { color:var(--muted); font-weight:500; }
+  a { color:var(--primary); }
+  ol.overview { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 16px 16px 36px; }
+  figure { margin:12px 0 20px; }
+  figure img { width:100%; border:1px solid var(--line); border-radius:8px; display:block; }
+  figcaption { color:var(--muted); font-size:13px; margin-top:6px; }
+  .tip { background:var(--tip); border-left:3px solid var(--primary); border-radius:4px; padding:12px 16px; margin:12px 0; }
+  table { border-collapse:collapse; width:100%; background:var(--card); font-size:14px; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#F3F4F6; }
+  dl.faq dt { font-weight:600; margin-top:12px; }
+  dl.faq dd { margin:4px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="../">← All guides</a></p>
+  <h1>Document Review — Create a Review Job</h1>
+  <p class="sub">Get compliance documents (CPC, GCC, DoC, test reports, TCF) reviewed by a lab or by yourself, whether you upload them or your supplier does.</p>
+  <div class="meta">
+    <b>Module</b><span>Document Review</span>
+    <b>Start here</b><span><a href="https://qmas.icw.io/document-review">https://qmas.icw.io/document-review</a> → <b>Create Job</b> or <b>Create Job for supplier</b></span>
+    <b>Direct links</b><span>You upload: <a href="https://qmas.icw.io/document-review/upload-document/create">https://qmas.icw.io/document-review/upload-document/create</a> · Supplier uploads: <a href="https://qmas.icw.io/document-review/upload-document/request">https://qmas.icw.io/document-review/upload-document/request</a></span>
+    <b>Checked against</b><span>QMAS dev, 4 Nov 2026</span>
+  </div>
+
+  <h2>Overview</h2>
+  <ol class="overview">
+    <li>Choose the flow that fits (table below).</li>
+    <li>Fill in <b>Job Type</b>, <b>Product Information</b> and the documents to review.</li>
+    <li>For a supplier job, choose the <b>connected supplier</b> who will upload.</li>
+    <li>Choose a <b>partner</b> (optional) and the <b>Service Provider</b>: a connected lab, or <b>Job Owner Review</b> to review yourself.</li>
+    <li>Click <b>Confirm</b>. Follow the status on the Document Review list until the review is concluded.</li>
+  </ol>
+
+  <h2>Step-by-step</h2>
+
+  <h3>1. Choose your flow</h3>
+  <table>
+    <tr><th>Flow</th><th>Button</th><th>Who uploads</th><th>Who reviews</th></tr>
+    <tr><td>A. Upload for lab review</td><td>Create Job</td><td>You</td><td>Connected lab</td></tr>
+    <tr><td>B. Supplier uploads for lab review</td><td>Create Job for supplier</td><td>Your connected supplier</td><td>Connected lab (Connected Provider)</td></tr>
+    <tr><td>C. Supplier uploads for your own review</td><td>Create Job for supplier</td><td>Your connected supplier</td><td>You (Job Owner Review)</td></tr>
+  </table>
+  <p>In the left menu, open <b>Document Review</b>. The dashboard shows service providers, jobs over 12 months, status and reject reasons. The tabs <b>All Job</b>, <b>My Job</b> and <b>View Only</b> list the jobs.</p>
+  <figure><img src="img/01-list.jpg" alt="Document Review with Create Job and Create Job for supplier."><figcaption>Document Review with Create Job and Create Job for supplier.</figcaption></figure>
+
+  <h3>2. Job Type</h3>
+  <p>Choose the <b>Job Type</b> (for example Document Review) and tick <b>CPC/GCC/DOC Review</b> and/or <b>Compliance Review</b>. Optionally fill in <b>Buyer Name</b>, <b>Service Required</b> (Regular by default) and <b>Submission Remark</b>.</p>
+  <figure><img src="img/02-create-job-top.jpg" alt="Create Job — 1. Job Type and 2. Product Information."><figcaption>Create Job — 1. Job Type and 2. Product Information.</figcaption></figure>
+
+  <h3>3. Product Information</h3>
+  <p>Keep <b>Select Product For Review = Yes</b>. Click <b>Existing Product</b> to pick products, or <b>New Product</b> to create one. For each product, check the <b>Basic Information</b>, then fill in <b>Additional Information</b>: Test Age Grade, Label Age Grade, Export Market and Country Of Origin are required.</p>
+  <figure><img src="img/03-product-info.jpg" alt="Basic Information and Additional Information for the selected product."><figcaption>Basic Information and Additional Information for the selected product.</figcaption></figure>
+  <p>Below that you can add <b>PO Information</b>, upload <b>Product Pictures &amp; Reference Documents</b>, set the <b>TCF Requests</b> (choose document types or import a TCF template) and add <b>Quality Requirements</b>.</p>
+  <figure><img src="img/04-tcf-requirements.jpg" alt="TCF Requests and Requirements."><figcaption>TCF Requests and Requirements.</figcaption></figure>
+
+  <h3>4. Documents for Review, partner and provider (Flow A)</h3>
+  <p>Under <b>Documents for Review</b>, click <b>Upload files</b> (at least one file is required). The reviewer gives a conclusion only on documents in this section.</p>
+  <p><b>Select Partner</b> (optional): choose Yes to let one partner view the job.</p>
+  <p><b>Service Provider</b>: choose the connected lab under <b>Connected Provider</b>. Click <b>Confirm</b>.</p>
+  <figure><img src="img/05-docs-partner-provider.jpg" alt="Documents for Review, Select Partner and Service Provider."><figcaption>Documents for Review, Select Partner and Service Provider.</figcaption></figure>
+
+  <h3>5. Create Job for supplier (Flows B and C)</h3>
+  <p>Click <b>Create Job for supplier</b>. Fill in Job Type and Product Information as above. Then:</p>
+  <ul>
+    <li><b>Select Connected Supplier</b>: choose the supplier who will upload. Only suppliers connected with you on QMAS are listed. See Supplier Management → Invite Supplier.</li>
+    <li><b>Select Partner</b> (optional).</li>
+    <li><b>Service Provider</b>: choose <b>Connected Provider</b> and a lab for Flow B, or <b>Job Owner Review</b> for Flow C.</li>
+    <li>Click <b>Confirm</b>. The supplier gets a notification to upload the documents.</li>
+  </ul>
+  <figure><img src="img/06-supplier-job-top.jpg" alt="Create Job for Supplier."><figcaption>Create Job for Supplier.</figcaption></figure>
+  <figure><img src="img/07-supplier-job-provider.jpg" alt="Select Connected Supplier, Select Partner and Service Provider (Connected Provider or Job Owner Review)."><figcaption>Select Connected Supplier, Select Partner and Service Provider (Connected Provider or Job Owner Review).</figcaption></figure>
+
+  <h3>6. Follow the review</h3>
+  <ul>
+    <li>Flow A and B: the job shows <b>Being Processed</b> while the lab reviews. The lab concludes each document as <b>Approve</b>, <b>Reject</b> or <b>Waiting for Additional Information</b>.</li>
+    <li>Flow C: when the supplier has uploaded, open the job, click <b>View detail</b>, and conclude each document yourself with <b>Approve</b>, <b>Reject</b>, <b>N/A</b> or <b>Waiting for additional information</b>. Click <b>Confirm</b>.</li>
+    <li>If a document is rejected or more information is needed, read the comment and upload a corrected file.</li>
+    <li>When all documents are approved, complete the job.</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <div class="tip">Flows B and C need a connected supplier. Invite the supplier first from Supplier / Factory Management → Invite Supplier.</div>
+  <div class="tip">Save a TCF document-type list as a template so you can reuse it in the next job.</div>
+
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>How do I send documents to a lab for review?</dt><dd>Go to Document Review (<a href="https://qmas.icw.io/document-review),">https://qmas.icw.io/document-review),</a> click Create Job, fill in Job Type and Product Information, upload files under Documents for Review, choose the lab under Service Provider, and click Confirm.</dd>
+    <dt>How do I ask my supplier to upload documents for review?</dt><dd>Click Create Job for supplier on Document Review, choose the connected supplier, then choose Connected Provider (lab review) or Job Owner Review (you review) and click Confirm.</dd>
+    <dt>What does Job Owner Review mean?</dt><dd>You review the supplier&#x27;s documents yourself instead of a lab.</dd>
+    <dt>Why can&#x27;t I find my supplier in Select Connected Supplier?</dt><dd>Only suppliers connected with you on QMAS are listed. Invite them from Supplier / Factory Management → Invite Supplier.</dd>
+  </dl>
+</main>
+</body>
+</html>

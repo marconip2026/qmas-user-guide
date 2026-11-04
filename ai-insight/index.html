@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Insight</title>
+<style>
+  :root { --bg:#F7FAFF; --card:#fff; --text:#1F2937; --muted:#6B7280; --primary:#005EFF; --line:#E5E7EB; --tip:#EEF4FF; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:15px/1.6 Roboto, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:40px 0 12px; padding-top:16px; border-top:1px solid var(--line); }
+  h3 { font-size:16px; margin:24px 0 8px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .meta { display:grid; grid-template-columns:max-content 1fr; gap:4px 16px; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; }
+  .meta b { color:var(--muted); font-weight:500; }
+  a { color:var(--primary); }
+  ol.overview { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 16px 16px 36px; }
+  figure { margin:12px 0 20px; }
+  figure img { width:100%; border:1px solid var(--line); border-radius:8px; display:block; }
+  figcaption { color:var(--muted); font-size:13px; margin-top:6px; }
+  .tip { background:var(--tip); border-left:3px solid var(--primary); border-radius:4px; padding:12px 16px; margin:12px 0; }
+  table { border-collapse:collapse; width:100%; background:var(--card); font-size:14px; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#F3F4F6; }
+  dl.faq dt { font-weight:600; margin-top:12px; }
+  dl.faq dd { margin:4px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="../">← All guides</a></p>
+  <h1>AI Insight — Run an AI Risk Screening</h1>
+  <p class="sub">Upload product photos and let AI identify compliance risks and requirements for your import region. You get a compliance guideline report (PDF).</p>
+  <div class="meta">
+    <b>Module</b><span>AI Insight (shown as “AI Risk Screening” in the QMAS menu)</span>
+    <b>Start here</b><span><a href="https://qmas.icw.io/ai-risk-screening">https://qmas.icw.io/ai-risk-screening</a> → <b>Add</b>, or a product profile → <b>AI Risk Screening</b> → <b>Add</b></span>
+    <b>Uses</b><span>Tokens. Your balance shows as <b>Available Token</b> in the pop-up.</span>
+    <b>Checked against</b><span>QMAS dev, 4 Nov 2026</span>
+  </div>
+
+  <h2>Overview</h2>
+  <ol class="overview">
+    <li>Open <b>AI Risk Screening</b> from the left menu (or from a product profile) and click <b>Add</b>.</li>
+    <li>Upload up to 6 product photos and choose the <b>Import Region</b> and <b>Output Mode</b>.</li>
+    <li>Click <b>Verify Information</b> (recommended) or <b>Skip Verify &amp; Generate Report</b>.</li>
+    <li>When the status is <b>Completed</b>, open the report from the list.</li>
+  </ol>
+
+  <h2>Step-by-step</h2>
+
+  <h3>1. Open AI Risk Screening</h3>
+  <p>In the left menu, open <b>AI Risk Screening</b>. The list shows every screening with its import region, output mode (Full or Lite), status and upload date. Click <b>Add</b>.</p>
+  <figure><img src="img/01-list.jpg" alt="AI Risk Screening list."><figcaption>AI Risk Screening list.</figcaption></figure>
+  <p>You can also start from a product: open the product profile, choose <b>AI Risk Screening</b> in its left menu, then click <b>Add</b>.</p>
+  <figure><img src="img/04-product-profile-entry.jpg" alt="AI Risk Screening inside a product profile."><figcaption>AI Risk Screening inside a product profile.</figcaption></figure>
+
+  <h3>2. Fill in the screening</h3>
+  <ul>
+    <li><b>Product Page URL</b> (optional): a link to the product page.</li>
+    <li><b>Product Images</b> (required): up to 6 photos from different views. PNG, JPEG, JPG, WEBP, GIF, AVIF or HEIC.</li>
+    <li><b>Import Region</b> (required): where the product will be sold.</li>
+    <li><b>Output Mode</b> (required): <b>Full</b> or <b>Lite</b> report.</li>
+    <li><b>Screening Age Grade</b> (optional): the age grade to screen against, for example 3+ or 8+.</li>
+  </ul>
+  <p><b>Available Token</b> shows your balance.</p>
+  <figure><img src="img/02-new-screening.jpg" alt="New AI Risk Screening pop-up."><figcaption>New AI Risk Screening pop-up.</figcaption></figure>
+
+  <h3>3. Verify and generate</h3>
+  <p>Click <b>Verify Information</b> (recommended: verification improves accuracy and gives a more reliable report), or <b>Skip Verify &amp; Generate Report</b> to go straight to the report.</p>
+  <p>The new screening appears in the list. When its status is <b>Completed</b>, the report is ready. Click the <b>ⓘ</b> icon to see the screening details.</p>
+  <figure><img src="img/03-screening-details.jpg" alt="Screening details: product name, import region, age grade, categories, materials, battery/AC/food-contact flags and output mode."><figcaption>Screening details: product name, import region, age grade, categories, materials, battery/AC/food-contact flags and output mode.</figcaption></figure>
+
+  <h2>Tips</h2>
+  <div class="tip">Use clear photos from several angles (front, back, label, packaging) for a better result.</div>
+  <div class="tip">Check your Available Token balance before you generate.</div>
+
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>How do I run an AI risk screening / AI Insight?</dt><dd>Go to AI Risk Screening (<a href="https://qmas.icw.io/ai-risk-screening),">https://qmas.icw.io/ai-risk-screening),</a> click Add, upload product photos, choose Import Region and Output Mode, then click Verify Information or Skip Verify &amp; Generate Report.</dd>
+    <dt>Where do I see my token balance?</dt><dd>In the AI Risk Screening pop-up, under Available Token.</dd>
+    <dt>What is the difference between Full and Lite?</dt><dd>They are the two report output modes. Choose one in Output Mode when you add a screening.</dd>
+  </dl>
+</main>
+</body>
+</html>
