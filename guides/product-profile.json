@@ -144,7 +144,7 @@
     {
       "h": "4. Quality Requirement",
       "body": [
-        "Quality Requirement lists what the product must meet, for example test standards or packaging rules. Each requirement has a **Type** (the group) and a **Name**. You can attach compliance data to it as proof, mark it completed, and reuse the list in Product Testing or Document Review. The tick next to the title turns green when the requirements are completed.",
+        "Quality Requirement lists what the product must meet, for example test standards or packaging rules. Each requirement has a **Type** (the group) and a **Name**. You can attach compliance data to it as proof, mark it completed, and reuse the list in Product Testing or Document Review.",
         {
           "img": "11-quality-requirement.jpg",
           "caption": "Empty Quality Requirement tab: Add Requirement, Test Plan (AI) and the ⋯ menu."
@@ -154,7 +154,7 @@
           "list": [
             "Click **Add Requirement** (or **Add** at the top right once the list has items).",
             "**Type**: pick an existing type, or type a new one and choose **+ Create “…”**.",
-            "**Name**: pick an existing name for that type, or type a new one and choose **+ Create**. Picking a different Type clears the Name.",
+            "**Name**: pick a name from the list for that type. Picking a different Type clears the Name.",
             "Tick **Mandatory** if the requirement must be met, then click **Confirm**."
           ]
         },
@@ -180,7 +180,7 @@
             ],
             [
               "Manage Templates",
-              "Edit or delete your templates."
+              "See and manage your saved templates."
             ]
           ]
         },
@@ -226,7 +226,7 @@
         {
           "list": [
             "**⋯ → Import To Product Testing**: tick the requirements (or **Select All**) and click **Confirm to Create Job**. Product Testing → Request Quotations opens with this product added, and the requirements appear under **Quality Requirement** in step 2.",
-            "**⋯ → Import to Document Review** → **Create Job** or **Create Job for supplier**: starts a Document Review job with these requirements.",
+            "**⋯ → Import to Document Review** → **Create Job** or **Create Job for supplier**: opens the matching Document Review form for this product.",
             "**⋯ → Export As Document**: exports the requirement list as a document."
           ]
         },

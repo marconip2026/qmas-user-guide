@@ -81,7 +81,7 @@ Click **Confirm**. The record appears in the Test Data table with its export mar
 
 ### 4. Quality Requirement
 
-Quality Requirement lists what the product must meet, for example test standards or packaging rules. Each requirement has a **Type** (the group) and a **Name**. You can attach compliance data to it as proof, mark it completed, and reuse the list in Product Testing or Document Review. The tick next to the title turns green when the requirements are completed.
+Quality Requirement lists what the product must meet, for example test standards or packaging rules. Each requirement has a **Type** (the group) and a **Name**. You can attach compliance data to it as proof, mark it completed, and reuse the list in Product Testing or Document Review.
 
 ![Empty Quality Requirement tab: Add Requirement, Test Plan (AI) and the ⋯ menu.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/11-quality-requirement.jpg)
 
@@ -89,7 +89,7 @@ Quality Requirement lists what the product must meet, for example test standards
 
 - Click **Add Requirement** (or **Add** at the top right once the list has items).
 - **Type**: pick an existing type, or type a new one and choose **+ Create “…”**.
-- **Name**: pick an existing name for that type, or type a new one and choose **+ Create**. Picking a different Type clears the Name.
+- **Name**: pick a name from the list for that type. Picking a different Type clears the Name.
 - Tick **Mandatory** if the requirement must be met, then click **Confirm**.
 
 ![Add Requirement with Type, Name and Mandatory.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/19-requirement-filled.jpg)
@@ -102,7 +102,7 @@ Click **⋯** next to the title → **Templates**:
 |---|---|
 | Apply Template | Pick a saved template (use **View** to preview it) and click **Apply**. All its requirements are added. |
 | Save As Template | Save this product's requirements as a template for other products. |
-| Manage Templates | Edit or delete your templates. |
+| Manage Templates | See and manage your saved templates. |
 
 ![⋯ → Templates.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/20-templates-menu.jpg)
 
@@ -130,7 +130,7 @@ QMAS shows “<template name> applied”. Requirements are grouped by Type; the 
 **4d. Send requirements to a job**
 
 - **⋯ → Import To Product Testing**: tick the requirements (or **Select All**) and click **Confirm to Create Job**. Product Testing → Request Quotations opens with this product added, and the requirements appear under **Quality Requirement** in step 2.
-- **⋯ → Import to Document Review** → **Create Job** or **Create Job for supplier**: starts a Document Review job with these requirements.
+- **⋯ → Import to Document Review** → **Create Job** or **Create Job for supplier**: opens the matching Document Review form for this product.
 - **⋯ → Export As Document**: exports the requirement list as a document.
 
 ![Import To Product Testing — choose requirements, then Confirm to Create Job.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/29-import-to-pt.jpg)
