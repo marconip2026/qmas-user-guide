@@ -79,22 +79,69 @@ Click **Confirm**. The record appears in the Test Data table with its export mar
 
 ### 4. Quality Requirement
 
-Lists the requirements this product must meet. Click **Add Requirement**, choose or create a **Type**, enter the **Name** and tick **Mandatory** if needed, then **Confirm**.
+Quality Requirement lists what the product must meet, for example test standards or packaging rules. Each requirement has a **Type** (the group) and a **Name**. You can attach compliance data to it as proof, mark it completed, and reuse the list in Product Testing or Document Review. The tick next to the title turns green when the requirements are completed.
 
-![Quality Requirement tab with Test Plan and the ⋯ menu.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/11-quality-requirement.jpg)
+![Empty Quality Requirement tab: Add Requirement, Test Plan (AI) and the ⋯ menu.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/11-quality-requirement.jpg)
 
-![Add Requirement.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/12-add-requirement.jpg)
+**4a. Add a requirement yourself**
 
-Click **⋯** next to the title for more options:
+- Click **Add Requirement** (or **Add** at the top right once the list has items).
+- **Type**: pick an existing type, or type a new one and choose **+ Create “…”**.
+- **Name**: pick an existing name for that type, or type a new one and choose **+ Create**. Picking a different Type clears the Name.
+- Tick **Mandatory** if the requirement must be met, then click **Confirm**.
 
-- **Import To Product Testing**: use these requirements in a Product Testing job.
-- **Import to Document Review**: use them in a Document Review job.
-- **Export As Document**: save the requirements as a document.
-- **Templates**: apply a saved template, or save these requirements as a template.
+![Add Requirement with Type, Name and Mandatory.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/19-requirement-filled.jpg)
 
-**Test Plan** creates a test plan with AI.
+**4b. Add requirements from a template (fastest)**
 
-![The ⋯ menu on Quality Requirement.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/13-requirement-menu.jpg)
+Click **⋯** next to the title → **Templates**:
+
+| Option | What it does |
+|---|---|
+| Apply Template | Pick a saved template (use **View** to preview it) and click **Apply**. All its requirements are added. |
+| Save As Template | Save this product's requirements as a template for other products. |
+| Manage Templates | Edit or delete your templates. |
+
+![⋯ → Templates.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/20-templates-menu.jpg)
+
+![Apply Template — View or Apply a saved template.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/21-apply-template.jpg)
+
+QMAS shows “<template name> applied”. Requirements are grouped by Type; the number next to the Type is how many requirements it has.
+
+![Requirements after applying a template.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/22-requirement-list.jpg)
+
+**4c. Attach proof and complete a requirement**
+
+- Click **+** on a requirement to open **Attach Compliance Data**. Choose the **Test Data**, **Certificate Data** or **Other** tab, tick the records and click **Confirm**. If a record you just added is missing, click **Reload Data**. To add new data, go to Compliance Data first.
+- Click **⌄** to expand a requirement and see the attached data. Click the bin icon to detach it.
+- Click **⋯** on a requirement for **Edit**, **Duplicate**, **Upload Document**, **Mark As Completed** and **Remove**.
+- **Mark As Completed** shows “Requirement Completed” and turns the requirement’s tick green.
+
+![Attach Compliance Data — tick the test record.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/23-attach-compliance.jpg)
+
+![The attached test data under the requirement.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/24-requirement-attached.jpg)
+
+![⋯ menu on one requirement.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/25-requirement-row-menu.jpg)
+
+![Requirement marked as completed.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/26-requirement-completed.jpg)
+
+**4d. Send requirements to a job**
+
+- **⋯ → Import To Product Testing**: tick the requirements (or **Select All**) and click **Confirm to Create Job**. Product Testing → Request Quotations opens with this product added, and the requirements appear under **Quality Requirement** in step 2.
+- **⋯ → Import to Document Review** → **Create Job** or **Create Job for supplier**: starts a Document Review job with these requirements.
+- **⋯ → Export As Document**: exports the requirement list as a document.
+
+![Import To Product Testing — choose requirements, then Confirm to Create Job.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/29-import-to-pt.jpg)
+
+![The requirement carried into Product Testing step 2.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/31-pt-requirement-carried.jpg)
+
+![Import to Document Review → Create Job or Create Job for supplier.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/28-import-doc-review.jpg)
+
+**4e. Test Plan (AI)**
+
+Click **Test Plan** to let AI suggest a test plan. Fill in the **Product Description** (more detail gives better results), **Import Country** and **Product Intended Used By**, upload up to 6 product images, then click **Generate Test Plan**.
+
+![Test Plan pop-up.](https://marconip2026.github.io/qmas-user-guide/product-profile/img/27-test-plan.jpg)
 
 
 ### 5. AI Risk Screening
@@ -153,4 +200,10 @@ A: Open the product → Packaging Detail → Create Packaging Component.
 
 **Q: How do I import many products?**
 A: On Product Management, click Import Product, download the ICW template, fill it in and upload it.
+
+**Q: How do I reuse quality requirements for many products?**
+A: Open a product → Quality Requirement → ⋯ → Templates → Save As Template. On other products use ⋯ → Templates → Apply Template.
+
+**Q: How do I prove a requirement is met?**
+A: On the requirement click +, attach the test or certificate data, then ⋯ → Mark As Completed.
 
