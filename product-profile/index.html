@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Profile Tabs</title>
+<style>
+  :root { --bg:#F7FAFF; --card:#fff; --text:#1F2937; --muted:#6B7280; --primary:#005EFF; --line:#E5E7EB; --tip:#EEF4FF; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:15px/1.6 Roboto, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:40px 0 12px; padding-top:16px; border-top:1px solid var(--line); }
+  h3 { font-size:16px; margin:24px 0 8px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .meta { display:grid; grid-template-columns:max-content 1fr; gap:4px 16px; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; }
+  .meta b { color:var(--muted); font-weight:500; }
+  a { color:var(--primary); }
+  ol.overview { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 16px 16px 36px; }
+  figure { margin:12px 0 20px; }
+  figure img { width:100%; border:1px solid var(--line); border-radius:8px; display:block; }
+  figcaption { color:var(--muted); font-size:13px; margin-top:6px; }
+  .tip { background:var(--tip); border-left:3px solid var(--primary); border-radius:4px; padding:12px 16px; margin:12px 0; }
+  table { border-collapse:collapse; width:100%; background:var(--card); font-size:14px; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#F3F4F6; }
+  dl.faq dt { font-weight:600; margin-top:12px; }
+  dl.faq dd { margin:4px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="../">← All guides</a></p>
+  <h1>Product Management — Every Tab of the Product Profile</h1>
+  <p class="sub">After you create a product, its profile holds everything about it. This guide explains each tab in the profile&#x27;s left menu and the import option on the product list.</p>
+  <div class="meta">
+    <b>Module</b><span>Product Management</span>
+    <b>Open a profile</b><span><a href="https://qmas.icw.io/product/list">https://qmas.icw.io/product/list</a> → click a product</span>
+    <b>Tabs</b><span>Document · Shipping Detail · Compliance Data · Quality Requirement · AI Risk Screening · CPSC eFiling · Packaging Detail</span>
+    <b>See also</b><span>Create and edit a product: <a href="https://marconip2026.github.io/qmas-user-guide/product-management/">https://marconip2026.github.io/qmas-user-guide/product-management/</a></span>
+    <b>Checked against</b><span>QMAS dev, 4 Nov 2026</span>
+  </div>
+
+  <h2>Overview</h2>
+  <ol class="overview">
+    <li><b>Document</b>: upload, organise, share and set reminders for the product&#x27;s files.</li>
+    <li><b>Shipping Detail</b>: sizes, weights and barcodes for the selling unit and cartons.</li>
+    <li><b>Compliance Data</b>: record test results, certificates and other compliance data.</li>
+    <li><b>Quality Requirement</b>: list the product&#x27;s quality requirements, use templates and send them to testing or document review.</li>
+    <li><b>AI Risk Screening</b>: run AI compliance screenings for this product.</li>
+    <li><b>CPSC eFiling</b>: submit eFiling for this product and see its eFiling log.</li>
+    <li><b>Packaging Detail</b>: record each packaging component, its materials and suppliers.</li>
+  </ol>
+
+  <h2>Step-by-step</h2>
+
+  <h3>1. Document</h3>
+  <p>Shows every file linked to the product. Use <b>New Folder</b> to organise files and <b>Upload</b> to add a file (see the Document Management guide for the upload pop-up). Filter by <b>Type</b>, <b>Source</b> or <b>Checked</b>, switch between <b>All</b> and <b>Archived</b>, and search with <b>Search Files</b>.</p>
+  <figure><img src="img/01-document.jpg" alt="Document tab."><figcaption>Document tab.</figcaption></figure>
+  <p>Tick one or more files to open the toolbar:</p>
+  <table>
+    <tr><th>Action</th><th>What it does</th></tr>
+    <tr><td>Set Data</td><td>Add compliance data (test, certificate or other) from this file.</td></tr>
+    <tr><td>Set Dates &amp; Reminder</td><td>Set issue, expiry and review dates and an email reminder.</td></tr>
+    <tr><td>Archive</td><td>Move the file to the Archived tab.</td></tr>
+    <tr><td>Download</td><td>Download the file.</td></tr>
+    <tr><td>Share</td><td>Create a share link with an expiry period. Copy it or send it by email.</td></tr>
+    <tr><td>Rename / Edit Type</td><td>Change the file name or document type.</td></tr>
+    <tr><td>Move</td><td>Move the file to a folder.</td></tr>
+    <tr><td>Remove</td><td>Remove the file.</td></tr>
+  </table>
+  <figure><img src="img/02-document-toolbar.jpg" alt="Toolbar after selecting a file."><figcaption>Toolbar after selecting a file.</figcaption></figure>
+  <figure><img src="img/03-document-share.jpg" alt="Share Via Link — choose how long the link stays valid, then Copy or By Email."><figcaption>Share Via Link — choose how long the link stays valid, then Copy or By Email.</figcaption></figure>
+
+  <h3>2. Shipping Detail</h3>
+  <p>Shows the length, width, height, gross and net weight, quantity and barcode for the <b>Selling Unit</b>, <b>Inner Carton</b> and <b>Outer Carton</b>. To change them, click <b>⋮</b> next to the product name → <b>Edit product</b> and update <b>Shipping Information</b>.</p>
+  <figure><img src="img/04-shipping-detail.jpg" alt="Shipping Detail tab."><figcaption>Shipping Detail tab.</figcaption></figure>
+
+  <h3>3. Compliance Data</h3>
+  <p>Three sections: <b>Test Data</b>, <b>Certificate Data</b> and <b>Other</b>. Click <b>Add Data</b> (or <b>Add</b> once a section has records).</p>
+  <figure><img src="img/05-compliance-data.jpg" alt="Compliance Data tab before any data is added."><figcaption>Compliance Data tab before any data is added.</figcaption></figure>
+  <p><b>Test Data</b> records one test result:</p>
+  <ul>
+    <li><b>Result</b> (required): Passed, Failed or Report As Is.</li>
+    <li><b>Export Market</b> (required). For US eFiling, choose <b>United States (CPSC eFiling submission)</b>.</li>
+    <li><b>Legislation, Test Item &amp; Citation</b> (required): type a keyword such as “lead” and pick the test item.</li>
+    <li><b>Report ID</b>, <b>Issue Party</b> (required), <b>Expiry Date</b> and <b>Test Date / Report Date</b>.</li>
+    <li>Link the report under <b>Existing Product Document</b> (a file already on the product) or <b>New Document</b>.</li>
+  </ul>
+  <figure><img src="img/07-test-item-search.jpg" alt="Search legislation and test items by keyword."><figcaption>Search legislation and test items by keyword.</figcaption></figure>
+  <figure><img src="img/08-test-data-filled.jpg" alt="A completed Test Data record with the report linked."><figcaption>A completed Test Data record with the report linked.</figcaption></figure>
+  <p>Click <b>Confirm</b>. The record appears in the Test Data table with its export market, legislation, test item, citation, report ID and issue party.</p>
+  <figure><img src="img/09-test-data-saved.jpg" alt="Saved test data."><figcaption>Saved test data.</figcaption></figure>
+  <p><b>Certificate Data</b> works the same way. Fill in the certificate <b>Type</b>, <b>Issue Party</b>, <b>Score / Overall Rating</b>, <b>Expiry Date</b> and <b>Certificate Date</b>, then link the certificate file.</p>
+  <figure><img src="img/10-certificate-data-form.jpg" alt="Certificate Data form."><figcaption>Certificate Data form.</figcaption></figure>
+
+  <h3>4. Quality Requirement</h3>
+  <p>Lists the requirements this product must meet. Click <b>Add Requirement</b>, choose or create a <b>Type</b>, enter the <b>Name</b> and tick <b>Mandatory</b> if needed, then <b>Confirm</b>.</p>
+  <figure><img src="img/11-quality-requirement.jpg" alt="Quality Requirement tab with Test Plan and the ⋯ menu."><figcaption>Quality Requirement tab with Test Plan and the ⋯ menu.</figcaption></figure>
+  <figure><img src="img/12-add-requirement.jpg" alt="Add Requirement."><figcaption>Add Requirement.</figcaption></figure>
+  <p>Click <b>⋯</b> next to the title for more options:</p>
+  <ul>
+    <li><b>Import To Product Testing</b>: use these requirements in a Product Testing job.</li>
+    <li><b>Import to Document Review</b>: use them in a Document Review job.</li>
+    <li><b>Export As Document</b>: save the requirements as a document.</li>
+    <li><b>Templates</b>: apply a saved template, or save these requirements as a template.</li>
+  </ul>
+  <p><b>Test Plan</b> creates a test plan with AI.</p>
+  <figure><img src="img/13-requirement-menu.jpg" alt="The ⋯ menu on Quality Requirement."><figcaption>The ⋯ menu on Quality Requirement.</figcaption></figure>
+
+  <h3>5. AI Risk Screening</h3>
+  <p>Lists the AI screenings for this product. Click <b>Add</b> to start one. The pop-up and results are explained in the AI Insight guide: <a href="https://marconip2026.github.io/qmas-user-guide/ai-insight/">https://marconip2026.github.io/qmas-user-guide/ai-insight/</a></p>
+  <figure><img src="img/17-ai-risk-screening.jpg" alt="AI Risk Screening tab."><figcaption>AI Risk Screening tab.</figcaption></figure>
+
+  <h3>6. CPSC eFiling</h3>
+  <p>Shows the <b>eFiling Log</b> for this product. Click <b>Submit eFiling</b> to create an eFiling. Before you can sync with CPSC, add your API Key and Secret Key in <b>Company Profile</b> (link in the grey note). The full flow is in the eFiling guide: <a href="https://marconip2026.github.io/qmas-user-guide/efiling/">https://marconip2026.github.io/qmas-user-guide/efiling/</a></p>
+  <figure><img src="img/16-cpsc-efiling.jpg" alt="CPSC eFiling tab."><figcaption>CPSC eFiling tab.</figcaption></figure>
+
+  <h3>7. Packaging Detail</h3>
+  <p>Lists the packaging components of the product. Click <b>Create Packaging Component</b> and fill in:</p>
+  <ul>
+    <li><b>Basic Information</b>: name and description (required), identification no., function, legal role, weight, material type and name, status (Active, Inactive or Draft), and packaging images.</li>
+    <li><b>Dimension</b>, <b>Additional Information</b>, <b>Supplier Linkage</b> and <b>Technical Documentation</b> (expand each section).</li>
+  </ul>
+  <p>Click <b>Confirm</b>. Use the <b>Status</b> filter to show active, inactive or draft components.</p>
+  <figure><img src="img/14-packaging.jpg" alt="Packaging Details tab."><figcaption>Packaging Details tab.</figcaption></figure>
+  <figure><img src="img/15-packaging-component.jpg" alt="Create Packaging Component."><figcaption>Create Packaging Component.</figcaption></figure>
+
+  <h3>8. Import products in bulk</h3>
+  <p>On the Product Management list, click <b>Import Product</b>. Download the ICW Product template (<b>download here</b>), fill it in, upload the Excel file (one file at a time), then click <b>Next</b>. Only the ICW template can be used.</p>
+  <figure><img src="img/18-import-product.jpg" alt="Import Product."><figcaption>Import Product.</figcaption></figure>
+
+  <h2>Tips</h2>
+  <div class="tip"><b>Hide product details</b> at the top right hides the product card on the left.</div>
+  <div class="tip">Link test reports to Test Data. eFiling can reuse this data when you quick-select test data.</div>
+  <div class="tip">Use requirement <b>Templates</b> so similar products get the same requirements.</div>
+
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>How do I add a test result to a product?</dt><dd>Open the product → Compliance Data → Test Data → Add Data. Fill in Result, Export Market, Legislation/Test Item, Issue Party, link the report, then Confirm.</dd>
+    <dt>How do I share a product document?</dt><dd>Open the product → Document, tick the file, click Share, choose the link expiry, then Copy or By Email.</dd>
+    <dt>How do I add quality requirements to a product?</dt><dd>Open the product → Quality Requirement → Add Requirement, or ⋯ → Templates to apply a saved template.</dd>
+    <dt>Where do I record packaging information?</dt><dd>Open the product → Packaging Detail → Create Packaging Component.</dd>
+    <dt>How do I import many products?</dt><dd>On Product Management, click Import Product, download the ICW template, fill it in and upload it.</dd>
+  </dl>
+</main>
+</body>
+</html>
