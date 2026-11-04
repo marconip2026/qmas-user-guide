@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upload a Document</title>
+<style>
+  :root { --bg:#F7FAFF; --card:#fff; --text:#1F2937; --muted:#6B7280; --primary:#005EFF; --line:#E5E7EB; --tip:#EEF4FF; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:15px/1.6 Roboto, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:40px 0 12px; padding-top:16px; border-top:1px solid var(--line); }
+  h3 { font-size:16px; margin:24px 0 8px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .meta { display:grid; grid-template-columns:max-content 1fr; gap:4px 16px; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; }
+  .meta b { color:var(--muted); font-weight:500; }
+  a { color:var(--primary); }
+  ol.overview { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 16px 16px 36px; }
+  figure { margin:12px 0 20px; }
+  figure img { width:100%; border:1px solid var(--line); border-radius:8px; display:block; }
+  figcaption { color:var(--muted); font-size:13px; margin-top:6px; }
+  .tip { background:var(--tip); border-left:3px solid var(--primary); border-radius:4px; padding:12px 16px; margin:12px 0; }
+  table { border-collapse:collapse; width:100%; background:var(--card); font-size:14px; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#F3F4F6; }
+  dl.faq dt { font-weight:600; margin-top:12px; }
+  dl.faq dd { margin:4px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="../">← All guides</a></p>
+  <h1>Document Management — Upload a Document</h1>
+  <p class="sub">Upload a compliance document, link it to products, suppliers or factories, set its dates and reminders, and add compliance data.</p>
+  <div class="meta">
+    <b>Module</b><span>Document Management</span>
+    <b>Start here</b><span><a href="https://qmas.icw.io/document-management">https://qmas.icw.io/document-management</a> → <b>Upload</b></span>
+    <b>Pop-up tabs</b><span>Save To → Dates &amp; Reminder → Compliance Data → Confirm</span>
+    <b>Checked against</b><span>QMAS dev, 4 Nov 2026</span>
+  </div>
+
+  <h2>Overview</h2>
+  <ol class="overview">
+    <li>Open <b>Document Management</b> and click <b>Upload</b>, then choose one or more files from your computer.</li>
+    <li>In <b>Upload Document</b>, choose the document <b>Type</b>.</li>
+    <li><b>Save To</b>: link the document to suppliers, factories or products.</li>
+    <li><b>Dates &amp; Reminder</b>: set issue, expiry and review dates and an email reminder.</li>
+    <li><b>Compliance Data</b>: add test data, certificate data or other data. Click <b>Confirm</b>.</li>
+  </ol>
+
+  <h2>Step-by-step</h2>
+
+  <h3>1. Open Document Management</h3>
+  <p>In the left menu, open <b>Document Management</b>. The tabs show <b>All</b>, <b>Pending Review</b>, <b>Expired</b>, <b>Archived</b> and <b>Trash</b> documents. Click <b>Upload</b> at the top right and choose your file.</p>
+  <figure><img src="img/01-list.jpg" alt="Document Management list with the Upload button."><figcaption>Document Management list with the Upload button.</figcaption></figure>
+
+  <h3>2. Choose the document type</h3>
+  <p>The <b>Upload Document</b> pop-up shows the file name. Click the pencil icon to rename it. Under <b>Type</b>, type or select a document type, for example <b>Test Report</b>.</p>
+  <figure><img src="img/02-upload-modal.jpg" alt="Upload Document pop-up."><figcaption>Upload Document pop-up.</figcaption></figure>
+
+  <h3>3. Save To — link the document</h3>
+  <p>On the <b>Save To</b> tab, click <b>Add Supplier</b>, <b>Add Factory</b> or <b>Add Product</b>. Select the items in the pop-up and click <b>Confirm</b>. A document can be linked to several items. Click <b>Remove</b> to unlink one.</p>
+  <figure><img src="img/03-save-to.jpg" alt="The document linked to a product."><figcaption>The document linked to a product.</figcaption></figure>
+
+  <h3>4. Dates &amp; Reminder</h3>
+  <p>Set the <b>Issue Date</b>, <b>Expiry Date</b> and <b>Review Date</b>. Under <b>Email Reminder</b>, choose <b>On Expiry Date</b>, <b>On Review Date</b> or <b>Custom</b> to get an email reminder. Use <b>Clear All Settings</b> to start again.</p>
+  <figure><img src="img/04-dates-reminder.jpg" alt="Dates &amp; Reminder tab."><figcaption>Dates &amp; Reminder tab.</figcaption></figure>
+
+  <h3>5. Compliance Data</h3>
+  <p>Click <b>Edit</b> next to <b>Test Data</b>, <b>Certificate Data</b> or <b>Other</b> to record the details from the document, such as test items and results or certificate numbers.</p>
+  <figure><img src="img/05-compliance-data.jpg" alt="Compliance Data tab."><figcaption>Compliance Data tab.</figcaption></figure>
+
+  <h3>6. Confirm</h3>
+  <p>Click <b>Confirm</b>. QMAS shows a success message and the document appears at the top of the list, with its type and the number of linked products, suppliers and factories.</p>
+  <figure><img src="img/06-uploaded.jpg" alt="The uploaded document at the top of the list."><figcaption>The uploaded document at the top of the list.</figcaption></figure>
+
+  <h2>Tips</h2>
+  <div class="tip">Set an expiry date and reminder for certificates and test reports so you know before they expire.</div>
+  <div class="tip">You can also upload documents from a product, supplier or factory profile.</div>
+
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>How do I upload a document?</dt><dd>Go to Document Management (<a href="https://qmas.icw.io/document-management),">https://qmas.icw.io/document-management),</a> click Upload, choose the file, set the Type, link it under Save To, then click Confirm.</dd>
+    <dt>How do I get a reminder before a document expires?</dt><dd>In the Upload Document pop-up, open Dates &amp; Reminder, set the Expiry Date, then choose an Email Reminder option.</dd>
+    <dt>Where can I see expired documents?</dt><dd>Open the Expired tab in Document Management.</dd>
+  </dl>
+</main>
+</body>
+</html>

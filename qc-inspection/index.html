@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QC Inspection Quote</title>
+<style>
+  :root { --bg:#F7FAFF; --card:#fff; --text:#1F2937; --muted:#6B7280; --primary:#005EFF; --line:#E5E7EB; --tip:#EEF4FF; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:15px/1.6 Roboto, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:40px 0 12px; padding-top:16px; border-top:1px solid var(--line); }
+  h3 { font-size:16px; margin:24px 0 8px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .meta { display:grid; grid-template-columns:max-content 1fr; gap:4px 16px; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; }
+  .meta b { color:var(--muted); font-weight:500; }
+  a { color:var(--primary); }
+  ol.overview { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 16px 16px 36px; }
+  figure { margin:12px 0 20px; }
+  figure img { width:100%; border:1px solid var(--line); border-radius:8px; display:block; }
+  figcaption { color:var(--muted); font-size:13px; margin-top:6px; }
+  .tip { background:var(--tip); border-left:3px solid var(--primary); border-radius:4px; padding:12px 16px; margin:12px 0; }
+  table { border-collapse:collapse; width:100%; background:var(--card); font-size:14px; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#F3F4F6; }
+  dl.faq dt { font-weight:600; margin-top:12px; }
+  dl.faq dd { margin:4px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="../">← All guides</a></p>
+  <h1>QC Inspection — Get a QC Inspection Quote via ICW</h1>
+  <p class="sub">Ask ICW to quote and arrange a third-party QC inspection for your products.</p>
+  <div class="meta">
+    <b>Module</b><span>QC Inspection</span>
+    <b>Start here</b><span><a href="https://qmas.icw.io/inspection">https://qmas.icw.io/inspection</a> → <b>Create Job</b> → <b>Get QC inspection quote via ICW</b></span>
+    <b>Direct link</b><span><a href="https://qmas.icw.io/inspection/jobs/new">https://qmas.icw.io/inspection/jobs/new</a></span>
+    <b>Steps</b><span>1 Inspection Requirement → 2 Report Details → 3 Supplier &amp; Factory → 4 Additional Information → 5 Review &amp; Submit</span>
+    <b>Checked against</b><span>QMAS dev, 4 Nov 2026</span>
+  </div>
+
+  <h2>Overview</h2>
+  <ol class="overview">
+    <li>Open <b>QC Inspection</b>, click <b>Create Job</b>, choose <b>Get QC inspection quote via ICW</b> and click <b>Continue</b>.</li>
+    <li><b>Inspection Requirement</b>: date, type, level, AQL, budget and provider preference.</li>
+    <li><b>Report Details</b>: products and POs to inspect.</li>
+    <li><b>Supplier &amp; Factory</b>: who makes the goods and where the inspection takes place.</li>
+    <li><b>Additional Information</b>: files and remarks.</li>
+    <li><b>Review &amp; Submit</b>: check everything and click <b>Submit</b>.</li>
+  </ol>
+
+  <h2>Step-by-step</h2>
+
+  <h3>1. Open QC Inspection</h3>
+  <p>In the left menu, open <b>QC Inspection</b>. The charts show inspection results, service providers and job types. Tabs list <b>All Job</b>, <b>3rd Party Job</b>, <b>Inhouse Record</b> and <b>Draft</b>. Click <b>Create Job</b>.</p>
+  <figure><img src="img/01-list.jpg" alt="QC Inspection list with Create Job."><figcaption>QC Inspection list with Create Job.</figcaption></figure>
+
+  <h3>2. Choose what you are looking for</h3>
+  <table>
+    <tr><th>Option</th><th>Use it when</th></tr>
+    <tr><td>Get QC inspection quote via ICW</td><td>You want ICW to arrange a third-party inspector. This guide.</td></tr>
+    <tr><td>Start internal inspection</td><td>Your own QC team will inspect. See the Internal QC Inspection guide.</td></tr>
+    <tr><td>Add inspection record</td><td>The inspection is already done and you want to record the result.</td></tr>
+  </table>
+  <p>Choose <b>Get QC inspection quote via ICW</b> and click <b>Continue</b>.</p>
+  <figure><img src="img/02-looking-to.jpg" alt="Create New Job — Looking to…"><figcaption>Create New Job — Looking to…</figcaption></figure>
+
+  <h3>3. Inspection Requirement</h3>
+  <ul>
+    <li><b>Inspection Date</b>.</li>
+    <li><b>Inspection type</b>: Final Random, Loading, During Production, Re-Inspection, Initial Production, Fabric, 100% or Vendor Own Inspection.</li>
+    <li><b>Inspection Level</b>: General Inspection Level I–III or Special Level S-1 to S-4.</li>
+    <li><b>Inspection AQL</b>: Critical, Major and Minor levels. They apply to all products in this job by default.</li>
+    <li><b>Target Budget</b> (currency and amount) and <b>Service Provider Preference</b>. Leave “No preference, ICW will match you with the best inspector” selected if you have no preferred provider.</li>
+  </ul>
+  <figure><img src="img/04-step1-filled.jpg" alt="Step 1 filled in. Click Save to keep a draft, or Next."><figcaption>Step 1 filled in. Click Save to keep a draft, or Next.</figcaption></figure>
+
+  <h3>4. Report Details</h3>
+  <p>Click <b>Add Product</b>, search for the product, click <b>Select</b>, then <b>Confirm</b>.</p>
+  <figure><img src="img/05-select-product.jpg" alt="Select related product(s) — search by name, item no., supplier or factory."><figcaption>Select related product(s) — search by name, item no., supplier or factory.</figcaption></figure>
+  <p>For each product, fill in the <b>PO</b> details: customer name, customer PO #, PO #, order quantity and number of cartons. Use <b>Add New PO</b> for more POs, <b>Add Product</b> for more products, and <b>Add Report</b> or <b>Duplicate Report</b> if you need separate reports. Tick <b>Signed Sample Available</b> if there is one. Click <b>Next</b>.</p>
+  <figure><img src="img/06-step2-report.jpg" alt="Report 1 with one product and its PO."><figcaption>Report 1 with one product and its PO.</figcaption></figure>
+
+  <h3>5. Supplier &amp; Factory</h3>
+  <p>Click <b>Add Supplier</b> and select the supplier. Then click <b>Select Existing Factory</b> and choose the factory where the inspection will take place. Check the contact person, phone and email for each. Click <b>Next</b>.</p>
+  <figure><img src="img/07-step3-supplier-factory.jpg" alt="Supplier and factory selected, with contact details."><figcaption>Supplier and factory selected, with contact details.</figcaption></figure>
+
+  <h3>6. Additional Information</h3>
+  <p>Upload reference files such as tech packs or previous reports, and write any special requirement in <b>Remark</b>. Click <b>Next</b>.</p>
+  <figure><img src="img/08-step4-additional.jpg" alt="Step 4 Additional Information."><figcaption>Step 4 Additional Information.</figcaption></figure>
+
+  <h3>7. Review &amp; Submit</h3>
+  <p>Check the summary. Click <b>Edit</b> on any section to change it. Click <b>Submit</b>.</p>
+  <figure><img src="img/09-step5-review.jpg" alt="Step 5 Review &amp; Submit."><figcaption>Step 5 Review &amp; Submit.</figcaption></figure>
+
+  <h3>8. Done — job detail</h3>
+  <p>QMAS shows “Create job successfully!” and opens the job. It has a Job ID and starts as <b>Under Review</b>. The <b>Quotes</b>, <b>Reports</b>, <b>Attachments</b> and <b>Invoices</b> tabs follow the job.</p>
+  <figure><img src="img/10-job-detail.jpg" alt="The new inspection job."><figcaption>The new inspection job.</figcaption></figure>
+
+  <h2>Tips</h2>
+  <div class="tip">Click <b>Save</b> on any step to keep a draft. Drafts are on the <b>Draft</b> tab.</div>
+  <div class="tip">Submit well before the inspection date so there is time for quoting and booking.</div>
+
+  <h2>FAQ</h2>
+  <dl class="faq">
+    <dt>How do I book a third-party QC inspection?</dt><dd>Go to QC Inspection (<a href="https://qmas.icw.io/inspection),">https://qmas.icw.io/inspection),</a> click Create Job, choose Get QC inspection quote via ICW, then complete the 5 steps and Submit.</dd>
+    <dt>What is the difference between a QC inspection quote and an internal inspection?</dt><dd>A quote via ICW uses a third-party inspector arranged by ICW. An internal inspection is done by your own QC team (Internal QC Inspection).</dd>
+    <dt>Can I save a QC job and finish it later?</dt><dd>Yes. Click Save on any step. The job is kept on the Draft tab.</dd>
+  </dl>
+</main>
+</body>
+</html>
