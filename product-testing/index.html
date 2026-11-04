@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Testing Guide</title>
+<style>
+  :root { --bg:#F7FAFF; --card:#fff; --text:#1F2937; --muted:#6B7280; --primary:#005EFF; --line:#E5E7EB; --tip:#EEF4FF; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:15px/1.6 Roboto, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:40px 0 12px; padding-top:16px; border-top:1px solid var(--line); }
+  h3 { font-size:16px; margin:24px 0 8px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .meta { display:grid; grid-template-columns:max-content 1fr; gap:4px 16px; background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; }
+  .meta b { color:var(--muted); font-weight:500; }
+  a { color:var(--primary); }
+  ol.overview { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 16px 16px 36px; }
+  figure { margin:12px 0 20px; }
+  figure img { width:100%; border:1px solid var(--line); border-radius:8px; display:block; }
+  figcaption { color:var(--muted); font-size:13px; margin-top:6px; }
+  .btn { display:inline-block; background:var(--primary); color:#fff; border-radius:4px; padding:0 8px; font-size:13px; line-height:22px; white-space:nowrap; }
+  .btn.ghost { background:#fff; color:var(--primary); border:1px solid var(--primary); line-height:20px; }
+  .tip { background:var(--tip); border-left:3px solid var(--primary); border-radius:4px; padding:12px 16px; margin:12px 0; }
+  .pending { border:1px dashed var(--muted); border-radius:8px; padding:24px; color:var(--muted); text-align:center; }
+  table { border-collapse:collapse; width:100%; background:var(--card); font-size:14px; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#F3F4F6; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="../">← All guides</a></p>
+  <h1>Product Testing — Request a Quotation</h1>
+  <p class="sub">Create a product testing job and get a quotation from a laboratory.</p>
+
+  <div class="meta">
+    <b>Module</b><span>Product Testing</span>
+    <b>Start here</b><span><a href="https://qmas.icw.io/product-testing">qmas.icw.io/product-testing</a> → <span class="btn">Create Job</span></span>
+    <b>Direct link</b><span><a href="https://qmas.icw.io/product-testing/create-job">qmas.icw.io/product-testing/create-job</a></span>
+    <b>Steps</b><span>1 Product Info → 2 Requirements → 3 Provider Selection → 4 Done</span>
+  </div>
+
+  <h2>Overview</h2>
+  <ol class="overview">
+    <li><b>Open Product Testing</b> and click <span class="btn">Create Job</span>.</li>
+    <li><b>Product Info</b> — add an existing product or create a new one.</li>
+    <li><b>Requirements</b> — set the export market, test items, quality requirements and service details.</li>
+    <li><b>Provider Selection</b> — choose Connected Provider, ICW or TicMart, then <span class="btn">Submit</span>.</li>
+    <li><b>Done</b> — track the job in the Product Testing list.</li>
+  </ol>
+
+  <h2>Step-by-step</h2>
+
+  <h3>1. Open Product Testing</h3>
+  <p>In the left menu, open <b>Product Testing</b>. The page shows charts of job status, service provider and test results, and the list of all jobs. Click <span class="btn">Create Job</span> above the list.</p>
+  <figure><img src="img/01-list.jpg" alt="Product Testing list page with the Create Job button"><figcaption>Product Testing list — Create Job is at the top right of the job list.</figcaption></figure>
+
+  <h3>2. Product Info — select products</h3>
+  <p>The <b>Request Quotations</b> wizard opens. Add the products for this testing order:</p>
+  <ul>
+    <li><span class="btn ghost">+ Existing Products</span> picks from your Product Management list.</li>
+    <li><span class="btn ghost">+ Add Products</span> creates a new product here.</li>
+  </ul>
+  <figure><img src="img/02-step1-product-info.jpg" alt="Step 1 Product Info, empty"><figcaption>Step 1 starts empty. Next stays disabled until a product is added.</figcaption></figure>
+
+  <p>In the <b>Select Product(s)</b> pop-up, search by product name or ID, click <span class="btn ghost">Select</span> on each product you need, then click <span class="btn">Confirm</span>. You can select more than one product.</p>
+  <figure><img src="img/04-product-selected.jpg" alt="Select Product(s) pop-up with one product selected"><figcaption>A selected product shows a blue “✓ Selected” button.</figcaption></figure>
+
+  <p>Check the product details. You can change <b>Item name on report</b> and <b>Item no. on report</b>, which are printed on the test report. Click <b>Add PO Information</b> to link a purchase order (optional). Then click <span class="btn">Next</span>.</p>
+  <figure><img src="img/05-step1-filled.jpg" alt="Step 1 with one product added"><figcaption>Use Remove to drop a product, or Edit product profile to update it.</figcaption></figure>
+
+  <h3>3. Requirements</h3>
+  <p><b>1. Test Requirements</b></p>
+  <ul>
+    <li><b>Export Market</b> — where the product will be sold (required).</li>
+    <li><b>Test Item</b> (optional) — choose a country, then search for test items or citations.</li>
+    <li><b>Quality Requirement</b> — Create New Requirements, Add Existing Requirements, or Import Requirement Template.</li>
+    <li><b>Remarks</b> and <b>Attachment</b> (optional) — special instructions and reference files.</li>
+  </ul>
+  <figure><img src="img/07-step2-export-market.jpg" alt="Step 2 Test Requirements with Export Market filled"><figcaption>Export Market filled in.</figcaption></figure>
+
+  <p><b>2. Additional Information</b></p>
+  <ul>
+    <li><b>Service Level</b> — Regular, Express or Shuttle / Emergency.</li>
+    <li><b>Country of Origin</b> — where the product is made (you can pick more than one).</li>
+    <li><b>Intended Usage</b> — General product, Adult product, Children product or Toys.</li>
+    <li><b>Buyer Name</b> (optional).</li>
+  </ul>
+  <p>When all required fields are filled, <span class="btn">Next</span> turns blue. Click it.</p>
+  <figure><img src="img/09-step2-filled.jpg" alt="Step 2 Additional Information filled"><figcaption>Additional Information filled — Next is now enabled.</figcaption></figure>
+
+  <h3>4. Provider Selection</h3>
+  <p>Choose who should quote this job. You can tick more than one:</p>
+  <table>
+    <tr><th>Option</th><th>Use it when</th></tr>
+    <tr><td>Connected Provider</td><td>You already work with a lab that is connected to your QMAS account.</td></tr>
+    <tr><td>ICW</td><td>You want ICW to find a lab. Pick a preferred lab, or leave “No Preference”.</td></tr>
+    <tr><td>TicMart (Marketplace)</td><td>You want quotations from labs in the TicMart marketplace.</td></tr>
+  </table>
+  <figure><img src="img/11-step3-icw-selected.jpg" alt="Step 3 Provider Selection with ICW ticked"><figcaption>ICW ticked with “No Preference”. Click Submit to send the request.</figcaption></figure>
+
+  <h3>5. Done</h3>
+  <div class="pending">Screenshots of the Done step and the job detail page will be added after a test submission on dev.</div>
+
+  <h2>Tips</h2>
+  <div class="tip">Items marked <b>(optional)</b> can be skipped. Next stays grey until every required field on the step is filled.</div>
+  <div class="tip">Item name and item no. on report are what the lab prints on the test report. Check them before you continue.</div>
+  <div class="tip">To leave the wizard, click <b>✕</b> at the top right.</div>
+</main>
+</body>
+</html>
